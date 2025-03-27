@@ -95,7 +95,7 @@ const Portfolio = () => {
           />
 
           {/* More Filters Button */}
-          <div className="flex items-center">
+          <div className="flex items-center ml-2 mr-6">
           <button
             className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md"
             onClick={() => setIsFiltersOpen(true)}
