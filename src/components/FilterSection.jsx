@@ -12,7 +12,7 @@ const FilterSection = ({ selectedColumns, setSelectedColumns, columnOptions }) =
   };
 
   return (
-    <div className="flex items-center gap-4 p-4 bg-gray-100 rounded-lg">
+    <div className="flex items-center gap-4 py-4 bg-gray-100 rounded-lg">
       
       <button
         className="bg-blue-500 text-white px-4 py-2 rounded-md cursor-pointer hover:bg-blue-600 transition"
