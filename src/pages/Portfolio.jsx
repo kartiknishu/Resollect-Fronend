@@ -86,7 +86,7 @@ const Portfolio = () => {
   onChange={(e) => setSearchQuery(e.target.value)}
 />
         </div>
-        <div className="flex space-x-2 ">
+        <div className="flex space-x-2 items-center">
           {/* Column Selection */}
           <FilterSection
             selectedColumns={selectedColumns}
@@ -95,7 +95,7 @@ const Portfolio = () => {
           />
 
           {/* More Filters Button */}
-          <div className="flex items-center ml-2 mr-6">
+          <div className="flex items-center ml-2 mr-8">
           <button
             className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md"
             onClick={() => setIsFiltersOpen(true)}
