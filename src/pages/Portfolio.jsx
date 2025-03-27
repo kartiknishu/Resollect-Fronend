@@ -81,7 +81,7 @@ const Portfolio = () => {
         <input
   type="text"
   placeholder="Search by Loan Number or Customer Name..."
-  className="border w-96 border-gray-300 rounded-md p-2 focus:ring-0 focus:ring-black"
+  className="border flex mr-3 w-96 border-gray-300 rounded-md p-2 focus:ring-0 focus:ring-black"
   value={searchQuery}
   onChange={(e) => setSearchQuery(e.target.value)}
 />
