@@ -81,7 +81,7 @@ function App() {
         <div className='flex'>
           <Sidebar selectedPage={selectedPage} setSelectedPage={setSelectedPage} pages= {pages}/>
           
-          <div className='md:p-5 w-full'>
+          <div className='py-4 md:p-5 w-full'>
             {pages[selectedPage].tag}
 
           </div>
