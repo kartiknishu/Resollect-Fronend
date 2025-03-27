@@ -28,19 +28,19 @@ const TableComponent = ({ filteredData, selectedColumns, columnOptions }) => {
 
   return (
     <div className="relative w-full mt-5">
-      {/* Table Wrapper with Scroll */}
-      <div className="overflow-x-auto overflow-y-auto max-h-[500px] border border-gray-300 rounded-md">
+      
+      <div className="overflow-x-auto overflow-y-auto max-h-[500px] border border-gray-400 rounded-md">
         <table className="table-auto w-full bg-white text-sm border-collapse">
-          {/* Table Header - Fixed */}
-          <thead className="sticky top-0 bg-white shadow-md z-10">
+          
+          <thead className="sticky top-0 bg-white font-semibold shadow-md z-10">
             <tr>
               {columnOptions
                 .filter((col) => selectedColumns.includes(col.key))
                 .map((col) => (
                   <th
                     key={col.key}
-                    className="border-b border-gray-300 p-3 text-left whitespace-nowrap overflow-hidden text-ellipsis bg-gray-100"
-                    style={{ maxWidth: "150px" }} // Ensures no wrapping
+                    className="border-b border-gray-300 p-3 text-left whitespace-nowrap overflow-hidden text-ellipsis bg-white"
+                    style={{ maxWidth: "150px" }}
                   >
                     <div className="flex items-center gap-1">
                       <span className="truncate">{col.label}</span>
@@ -57,7 +57,7 @@ const TableComponent = ({ filteredData, selectedColumns, columnOptions }) => {
             </tr>
           </thead>
 
-          {/* Table Body - Scrollable */}
+         
           <tbody>
             {sortedData.map((item, index) => (
               <tr key={index} className="hover:bg-gray-50">
@@ -67,7 +67,7 @@ const TableComponent = ({ filteredData, selectedColumns, columnOptions }) => {
                     <td
                       key={col.key}
                       className="border-b border-gray-300 p-3 text-left whitespace-nowrap overflow-hidden text-ellipsis"
-                      style={{ maxWidth: "150px" }} // Ensures text doesn't wrap
+                      style={{ maxWidth: "150px" }}
                     >
                       {item[col.key]}
                     </td>
